@@ -1,0 +1,19 @@
+nav, footer, video {
+  display: none;
+}
+/*this will work with http and https*/
+a[href^="http://"]:after, a[href^="https://"]:after {
+content: " (" attr(href) ")";
+}
+a[href^="#"]:after {
+content: "";
+}
+body {
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+article {
+  width: 90%;
+}
